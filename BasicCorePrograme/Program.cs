@@ -14,7 +14,7 @@ namespace BasicCorePrograme
 
             if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
             {
-                Console.WriteLine("{0} is a Leap Year.", Year);
+                Console.WriteLine("{0} is a Leap year.", Year);
                 
             }
             else
