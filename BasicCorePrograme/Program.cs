@@ -5,33 +5,23 @@ using System;
 namespace BasicCorePrograme
 {
 
-    class Factor
+    class Divide
     {
-
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Number :");
-            int number = int.Parse(Console.ReadLine());
-            int count = 0;
-            for (int i = 1; i <= number; i++)
+            Console.WriteLine("Enter the dividend :");
+            int dividend = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the divisor :");
+            int divisor = int.Parse(Console.ReadLine());
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
 
-            {
-                if (number % i == 0)
-                {
-                    count++;
-
-                }
-            }
-            if (count == 2)
-            {
-                Console.WriteLine("prime number");
-            }
-            else
-            {
-                Console.WriteLine("not a prime number");
-            }
-           
+            Console.WriteLine("dividend:{0} divisor :{1}", dividend, divisor);
+            Console.WriteLine("quotient= " + quotient);
+            Console.WriteLine("remainder = " + remainder);
+            
         }
+
     }
 
 }
