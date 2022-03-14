@@ -14,7 +14,7 @@ namespace BasicCorePrograme
             int coincheck = random.Next(0, 2);
             if (coincheck == coinHead)
             {
-                Console.WriteLine("coin is Head");
+                Console.WriteLine("coin is head");
 
             }
             else
