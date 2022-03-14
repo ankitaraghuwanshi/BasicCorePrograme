@@ -4,30 +4,28 @@ using System;
 
 namespace BasicCorePrograme
 {
-    class EvenOdd
+    class VowelConsonant
     {
-
         public static void Main(string[] args)
         {
+            char alpha;
+            Console.WriteLine("Enter a Alphabet : ");
+            alpha = char.Parse(Console.ReadLine());
 
-
-            int number;
-            Console.Write("Enter a Number : ");
-            number = int.Parse(Console.ReadLine());
-            if (number % 2 == 0)
+            if (alpha == 'a' || alpha == 'e' || alpha == 'i' || alpha == 'o' || alpha == 'u')
             {
-                Console.Write("Even Number");
-            }
 
+                Console.WriteLine("alphabet is Vowel");
+
+            }
             else
             {
-                Console.Write("Odd Number");
+                Console.WriteLine("alphabet is Consonant");
             }
 
-
         }
-
-
     }
-
 }
+
+
+ 
