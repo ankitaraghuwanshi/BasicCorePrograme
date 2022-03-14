@@ -5,20 +5,33 @@ using System;
 namespace BasicCorePrograme
 {
 
-    class HarmonicSeries
+    class Factor
     {
+
         public static void Main(string[] args)
         {
-            int i = 1;
-            Console.WriteLine("Enter the number :");
+            Console.WriteLine("Enter the Number :");
             int number = int.Parse(Console.ReadLine());
-            for (i = 1; i <= number; i++)
-            {
-                Console.Write("1/{0} +", i);
+            int count = 0;
+            for (int i = 1; i <= number; i++)
 
+            {
+                if (number % i == 0)
+                {
+                    count++;
+
+                }
+            }
+            if (count == 2)
+            {
+                Console.WriteLine("prime number");
+            }
+            else
+            {
+                Console.WriteLine("not a prime number");
             }
            
         }
-    } 
+    }
 
 }
