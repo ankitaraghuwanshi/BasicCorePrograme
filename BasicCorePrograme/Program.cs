@@ -5,27 +5,20 @@ using System;
 namespace BasicCorePrograme
 {
 
-    class PowerOfNum
+    class HarmonicSeries
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the value of N :");
-            int limit = int.Parse(Console.ReadLine());
+            int i = 1;
+            Console.WriteLine("Enter the number :");
+            int number = int.Parse(Console.ReadLine());
+            for (i = 1; i <= number; i++)
+            {
+                Console.Write("1/{0} +", i);
+
+            }
            
-            if (limit < 31)
-            {
-                int powerOf = (int)Math.Pow(2, limit);
-                Console.WriteLine("2 is the power of :"+ limit);
-                Console.WriteLine("= " + powerOf);
-
-            }
-            else
-            {
-                Console.WriteLine("Numberis less then 31");
-            }
-            
         }
-    }
-
+    } 
 
 }
