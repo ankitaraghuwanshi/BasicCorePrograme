@@ -4,24 +4,25 @@ using System;
 
 namespace BasicCorePrograme
 {
-
-    class Divide
+    class SwapNumber
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the dividend :");
-            int dividend = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the divisor :");
-            int divisor = int.Parse(Console.ReadLine());
-            int quotient = dividend / divisor;
-            int remainder = dividend % divisor;
-
-            Console.WriteLine("dividend:{0} divisor :{1}", dividend, divisor);
-            Console.WriteLine("quotient= " + quotient);
-            Console.WriteLine("remainder = " + remainder);
-            
-        }
-
+            int numA, numB, temp;
+            Console.WriteLine("Input the First Number : ");
+            numA = int.Parse(Console.ReadLine());
+            Console.WriteLine("Input the Second Number : ");
+            numB = int.Parse(Console.ReadLine());
+            temp = numA;
+            numA = numB;
+            numB = temp;
+            Console.Write("\nAfter Swapping : ");
+            Console.Write("\nFirst Number : " + numA);
+            Console.Write("\nSecond Number : " + numB);
+            Console.Read();
+        }    
     }
 
+
 }
+
