@@ -5,26 +5,27 @@ using System;
 namespace BasicCorePrograme
 {
 
-    class Leapyear
+    class PowerOfNum
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter Year : ");
-            int Year = int.Parse(Console.ReadLine());
-
-            if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
+            Console.WriteLine("Please enter the value of N :");
+            int limit = int.Parse(Console.ReadLine());
+           
+            if (limit < 31)
             {
-                Console.WriteLine("{0} is a Leap year.", Year);
-                
+                int powerOf = (int)Math.Pow(2, limit);
+                Console.WriteLine("2 is the power of :"+ limit);
+                Console.WriteLine("= " + powerOf);
+
             }
             else
             {
-                Console.WriteLine("{0} is not a Leap Year.", Year);
-                Console.ReadLine();
-               
+                Console.WriteLine("Numberis less then 31");
             }
+            
         }
-
     }
+
 
 }
