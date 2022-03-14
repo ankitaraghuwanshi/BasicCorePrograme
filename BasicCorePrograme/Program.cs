@@ -5,24 +5,26 @@ using System;
 namespace BasicCorePrograme
 {
 
-    class CoinFlip
+    class Leapyear
     {
         public static void Main(string[] args)
         {
-            int coinHead = 1; // constant
-            Random random = new Random();
-            int coincheck = random.Next(0, 2);
-            if (coincheck == coinHead)
-            {
-                Console.WriteLine("coin is head");
+            Console.WriteLine("Enter Year : ");
+            int Year = int.Parse(Console.ReadLine());
 
+            if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
+            {
+                Console.WriteLine("{0} is a Leap Year.", Year);
+                
             }
             else
             {
-                Console.WriteLine("coin is tails");
-
+                Console.WriteLine("{0} is not a Leap Year.", Year);
+                Console.ReadLine();
+               
             }
         }
 
     }
+
 }
