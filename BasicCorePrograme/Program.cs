@@ -4,28 +4,35 @@ using System;
 
 namespace BasicCorePrograme
 {
-    class VowelConsonant
+    class LargestNumber
     {
         public static void Main(string[] args)
         {
-            char alpha;
-            Console.WriteLine("Enter a Alphabet : ");
-            alpha = char.Parse(Console.ReadLine());
+            int first, second, third;
+            Console.WriteLine("Enter the first number : ");
+            first = int.Parse(Console.ReadLine());
 
-            if (alpha == 'a' || alpha == 'e' || alpha == 'i' || alpha == 'o' || alpha == 'u')
+            Console.WriteLine("Enter the second number : ");
+            second = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number : ");
+            third = int.Parse(Console.ReadLine());
+
+            if (first > second && first > third)
             {
-
-                Console.WriteLine("alphabet is Vowel");
-
+                Console.WriteLine("largest number : " + first);
+            }
+            else if (second > first && second > third)
+            {
+                Console.WriteLine("largest number : " + second);
             }
             else
             {
-                Console.WriteLine("alphabet is Consonant");
+                Console.WriteLine("largest number : " + third);
             }
 
         }
     }
 }
-
 
  
